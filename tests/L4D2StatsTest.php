@@ -18,4 +18,10 @@ class L4D2StatsTest extends PHPUnit_Framework_TestCase {
         $stats = $statsClient->getStats("gutomaia", "l4d2");
         $this->assertEquals(3, $stats["visibilityState"]);
     }
+
+    public function testL4D2getGameFriendlyName(){
+        $statsClient = new steamer\Stats();
+        $stats = $statsClient->getStats("gutomaia", "l4d2");
+        $this->assertEquals("L4D2", $stats["gameFriendlyName"]);
+    }
 }
