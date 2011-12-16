@@ -18,6 +18,11 @@ class Stats {
         );
         if ($game == 'tf2'){
             $stats['gameFriendlyName'] = 'TF2';
+            $stats['gameName'] = 'Team Fortress 2';
+            $stats['gameLink'] = 'http://store.steampowered.com/app/440';
+            $stats['gameIcon'] = 'http://media.steampowered.com/steamcommunity/public/images/apps/440/e3f595a92552da3d664ad00277fad2107345f743.jpg';
+            $stats['gameLogo'] = 'http://media.steampowered.com/steamcommunity/public/images/apps/440/07385eb55b5ba974aebbe74d3c99626bda7920b8.jpg';
+            $stats['gameLogoSmall'] = 'http://media.steampowered.com/steamcommunity/public/images/apps/440/07385eb55b5ba974aebbe74d3c99626bda7920b8_thumb.jpg';
         }
         return $stats;
     }
