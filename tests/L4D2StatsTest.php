@@ -14,7 +14,8 @@ spl_autoload_register("autoload");
 class L4D2StatsTest extends PHPUnit_Framework_TestCase {
 
     public function testL4D2getVisibilityState() {
-        $this->stats = new steamer\Stats();
-        $this->assertTrue(true);
+        $statsClient = new steamer\Stats();
+        $stats = $statsClient->getStats("gutomaia", "l4d2");
+        $this->assertEquals(3, $stats["visibilityState"]);
     }
 }
