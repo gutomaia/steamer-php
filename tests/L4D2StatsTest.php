@@ -13,15 +13,20 @@ spl_autoload_register("autoload");
 
 class L4D2StatsTest extends PHPUnit_Framework_TestCase {
 
-    public function testL4D2getVisibilityState() {
+    function setUp(){
         $statsClient = new steamer\Stats();
-        $stats = $statsClient->getStats("gutomaia", "l4d2");
-        $this->assertEquals(3, $stats["visibilityState"]);
+        $this->stats = $statsClient->getStats("gutomaia", "l4d2");
+    }
+
+    function tearDown(){
+        $this->stats = null;
+    }
+
+    public function testL4D2getVisibilityState() {
+        $this->assertEquals(3, $this->stats["visibilityState"]);
     }
 
     public function testL4D2getGameFriendlyName(){
-        $statsClient = new steamer\Stats();
-        $stats = $statsClient->getStats("gutomaia", "l4d2");
-        $this->assertEquals("L4D2", $stats["gameFriendlyName"]);
+        $this->assertEquals("L4D2", $this->stats["gameFriendlyName"]);
     }
 }
