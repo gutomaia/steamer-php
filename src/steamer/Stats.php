@@ -4,8 +4,8 @@ namespace steamer;
 
 class Stats {
 
-    public function getStats(){
-        return array(
+    public function getStats($username, $game){
+        $stats = array(
             "visibilityState"=>3,
             "gameFriendlyName"=>"L4D2",
             "gameName"=>"Left 4 Dead 2",
@@ -16,6 +16,10 @@ class Stats {
             "steamID64"=>76561197985077150,
             "playerCustomURL"=>"gutomaia"
         );
+        if ($game == 'tf2'){
+            $stats['gameFriendlyName'] = 'TF2';
+        }
+        return $stats;
     }
 
 }
