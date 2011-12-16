@@ -29,4 +29,8 @@ class L4D2StatsTest extends PHPUnit_Framework_TestCase {
     public function testL4D2getGameFriendlyName(){
         $this->assertEquals("L4D2", $this->stats["gameFriendlyName"]);
     }
+
+    public function testL4D2getGameName(){
+        $this->assertEquals("Left 4 Dead 2", $this->stats["gameName"]);
+    }
 }
