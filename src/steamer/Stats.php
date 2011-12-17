@@ -50,8 +50,29 @@ class Stats {
         );
 
         $achievements[1] = array(
-            'iconClosed' => 'http://media.steampowered.com/steamcommunity/public/images/apps/550/b1b772b233b812fd410aee1f175f8b1cb4fe4e43.jpg'
+            'iconClosed' => 'http://media.steampowered.com/steamcommunity/public/images/apps/550/b1b772b233b812fd410aee1f175f8b1cb4fe4e43.jpg',
+            'iconOpen' => 'http://media.steampowered.com/steamcommunity/public/images/apps/550/1921292f1593086aa0dc7d29124e4c0c1119e084.jpg',
+            'name' => 'CRASS MENAGERIE',
+            'apiname' => 'ach_kill_every_uncommon_infected',
+            'description' => 'Kill one of each Uncommon Infected.',
+            'timestamp' => 1292451219000
         );
+
+        $achievements[2] = array(
+            'iconClosed' => 'http://media.steampowered.com/steamcommunity/public/images/apps/550/b65a6518c0680448e996e2190d1ed6b00ad14935.jpg',
+            'name' => 'A RIDE DENIED',
+            'apiname' => 'ach_save_player_from_jockey_fast',
+            'description' => 'Kill a Jockey within 2 seconds of it jumping on a Survivor.'
+        );
+
+        $achievements[3] = array(
+            'iconClosed' => 'http://media.steampowered.com/steamcommunity/public/images/apps/550/4eb2b093ce1dd442da4a62c9a0659602fbfc0d1e.jpg',
+            'iconOpen' => 'http://media.steampowered.com/steamcommunity/public/images/apps/550/4fc103dcb52ccc748b5bdea66924d1bf5c9e0705.jpg',
+            'name' => 'ARMORY OF ONE',
+            'apiname' => 'ach_deploy_ammo_upgrade',
+            'description' => 'Deploy an ammo upgrade and have your team use it.'
+        );
+
         return $achievements;
     }
 
