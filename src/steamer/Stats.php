@@ -34,4 +34,8 @@ class Stats {
         return $stats;
     }
 
+    public function getAchievements(){
+        
+    }
+
 }
