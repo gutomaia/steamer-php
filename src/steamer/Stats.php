@@ -35,7 +35,11 @@ class Stats {
     }
 
     public function getAchievements(){
-        
+        $achievements = array();
+        for ($i=0;$i<67;$i++){
+            $achievements[] = "";
+        }
+        return $achievements;
     }
 
 }
